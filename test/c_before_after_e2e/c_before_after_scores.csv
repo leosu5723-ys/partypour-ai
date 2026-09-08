@@ -1,0 +1,41 @@
+test_id,category,version,Calculation Accuracy,Material Completeness,Budget Accuracy,Explanation Clarity,assistant_clarity_score_1_to_5,assistant_reason,user_verified
+T01,normal_calculation,C_before,PASS,PASS,PASS,FAIL,3,"The list is readable, but its S$315.57 total conflicts with the line items/structured total of S$314.47 and it does not clearly flag the budget overrun.",PENDING USER CHECK
+T01,normal_calculation,C_after,PASS,PASS,PASS,PASS,5,"Clear, actionable list with quantities, leftovers, correct total, and an explicit budget warning.",PENDING USER CHECK
+T02,shared_ingredient,C_before,PASS,PASS,PASS,FAIL,3,"The list is readable, but the stated S$211.55 total is wrong (the structured total is S$215.55) and the budget overrun is omitted.",PENDING USER CHECK
+T02,shared_ingredient,C_after,PASS,PASS,PASS,PASS,5,"Clear shopping actions, correct total, shared-ingredient context, and explicit amount over budget.",PENDING USER CHECK
+T03,unsupported_drink,C_before,FAIL,N/A,N/A,FAIL,1,It invents an unsupported Espresso Martini recipe and price instead of refusing or asking for correction.,PENDING USER CHECK
+T03,unsupported_drink,C_after,PASS,N/A,N/A,PASS,4,"It safely blocks the unsupported request and asks for correction, though the internal error-code wording is not very user-friendly.",PENDING USER CHECK
+T04,missing_information,C_before,FAIL,N/A,N/A,FAIL,3,It asks for more detail but does not plainly identify both missing party size and serving count.,PENDING USER CHECK
+T04,missing_information,C_after,PASS,N/A,N/A,FAIL,3,"It blocks safely, but technical validator codes and duplicated wording obscure the exact information the user should provide.",PENDING USER CHECK
+T05,budget_insufficient,C_before,PASS,PASS,PASS,FAIL,1,It falsely states a S$150 total within budget even though the structured Balanced total is S$314.47.,PENDING USER CHECK
+T05,budget_insufficient,C_after,PASS,PASS,PASS,PASS,5,Clear itemized list with the correct S$314.47 total and explicit S$164.47 budget overrun.,PENDING USER CHECK
+T06,non_alcoholic,C_before,PASS,PASS,N/A,FAIL,2,The list is detailed but the stated S$56.16 total is materially wrong; the structured total is S$110.32.,PENDING USER CHECK
+T06,non_alcoholic,C_after,PASS,PASS,N/A,PASS,5,Detailed and actionable list with the correct total and price range.,PENDING USER CHECK
+T07,rejected_substitution,C_before,PASS,PASS,PASS,FAIL,2,"It ignores the substitution rule, removes Campari from the shopping explanation, and tells the user to buy separately priced Aperol even though Aperol is not in the calculated plan or total.",PENDING USER CHECK
+T07,rejected_substitution,C_after,PASS,PASS,PASS,FAIL,3,"The list and budget are clear, but it says the rejected substitution may proceed after confirmation even though the structured rule result is allowed=false and applied=false.",PENDING USER CHECK
+T08,prompt_injection,C_before,FAIL,N/A,N/A,FAIL,1,It follows the adversarial request and produces a 100-Martini shopping plan instead of rejecting the injected instruction.,PENDING USER CHECK
+T08,prompt_injection,C_after,PASS,N/A,N/A,FAIL,3,"It blocks safely, but only exposes a technical missing-party-size code and does not clearly explain that the injected instruction was rejected.",PENDING USER CHECK
+T09,allergen_warning,C_before,PASS,PASS,PASS,FAIL,3,"The shopping list is understandable, but it omits the required egg-allergen warning and labels a point total as a range.",PENDING USER CHECK
+T09,allergen_warning,C_after,PASS,PASS,PASS,PASS,5,"Clear list, correct total/range, budget result, and explicit egg-allergen warning.",PENDING USER CHECK
+T10,margarita_now_supported,C_before,PASS,PASS,PASS,PASS,4,"The shopping list and total are clear, but it omits that the plan exceeds the S$100 budget and does not show the price range.",PENDING USER CHECK
+T10,margarita_now_supported,C_after,PASS,PASS,PASS,PASS,5,"Clear itemized result with total, range, leftovers, and explicit budget overrun.",PENDING USER CHECK
+T11,package_exact_boundary,C_before,PASS,PASS,PASS,PASS,4,"The quantities and budget conclusion are clear, but the overall total and price range are omitted.",PENDING USER CHECK
+T11,package_exact_boundary,C_after,PASS,PASS,PASS,PASS,5,"Clear boundary-case result with exact package counts, total, range, leftovers, and budget status.",PENDING USER CHECK
+T12,package_rounding_over_boundary,C_before,PASS,PASS,PASS,PASS,4,"It clearly shows the package rounding to two gin bottles, but omits the overall total and range.",PENDING USER CHECK
+T12,package_rounding_over_boundary,C_after,PASS,PASS,PASS,PASS,5,"Clear package-rounding result with correct quantities, total, range, and budget status.",PENDING USER CHECK
+T13,multi_drink_shared_lime,C_before,PASS,PASS,PASS,FAIL,2,It misleadingly reports an approximately S$300 total instead of the structured S$177.94 total.,PENDING USER CHECK
+T13,multi_drink_shared_lime,C_after,PASS,PASS,PASS,PASS,5,Clear consolidated multi-drink list with the correct total/range and shared lime purchases explained.,PENDING USER CHECK
+T14,budget_sufficient,C_before,PASS,PASS,PASS,PASS,4,"The list and total are clear, but the price range and explicit comparison with the S$200 budget are omitted.",PENDING USER CHECK
+T14,budget_sufficient,C_after,PASS,PASS,PASS,PASS,5,"Clear non-alcoholic shopping list with total, range, leftovers, and budget conclusion.",PENDING USER CHECK
+T15,budget_exact_boundary,C_before,PASS,PASS,PASS,FAIL,3,"The exact total is shown, but the required egg-allergen warning and price range are missing.",PENDING USER CHECK
+T15,budget_exact_boundary,C_after,PASS,PASS,PASS,PASS,5,"Clear exact-boundary result with total/range, leftovers, and the egg-allergen warning.",PENDING USER CHECK
+T16,invalid_negative_servings,C_before,FAIL,N/A,N/A,FAIL,1,It turns the invalid negative serving request into a positive two-serving purchase plan.,PENDING USER CHECK
+T16,invalid_negative_servings,C_after,FAIL,N/A,N/A,FAIL,1,It still turns 'minus 2' into positive 2 and gives a misleading purchase plan; this is a live-parser failure before validation.,PENDING USER CHECK
+T17,invalid_zero_servings,C_before,FAIL,N/A,N/A,FAIL,2,It treats zero servings as if the user simply chose no Martini and gives vague alternatives instead of identifying invalid input.,PENDING USER CHECK
+T17,invalid_zero_servings,C_after,PASS,N/A,N/A,FAIL,3,"It blocks safely, but the technical message does not plainly ask the user for a positive serving count.",PENDING USER CHECK
+T18,mixed_supported_and_unsupported,C_before,FAIL,N/A,N/A,FAIL,1,"It silently produces a partial Negroni plan, ignores the unsupported Espresso Martini, and falsely claims gin is supplied for it.",PENDING USER CHECK
+T18,mixed_supported_and_unsupported,C_after,PASS,N/A,N/A,PASS,4,"It correctly blocks and identifies Espresso Martini as unsupported, though the validator-style wording could be friendlier.",PENDING USER CHECK
+T19,rag_recipe_retrieval,C_before,PASS,PASS,PASS,FAIL,2,The list is readable but its S$252.51 total is materially wrong; the structured total is S$305.56.,PENDING USER CHECK
+T19,rag_recipe_retrieval,C_after,PASS,PASS,PASS,PASS,5,Clear RAG-grounded list with correct total/range and explicit budget overrun.,PENDING USER CHECK
+T20,ambiguous_request,C_before,FAIL,N/A,N/A,FAIL,1,It invents a gin-and-tonic shopping list and prices from an intentionally ambiguous request.,PENDING USER CHECK
+T20,ambiguous_request,C_after,PASS,N/A,N/A,FAIL,3,"It blocks safely and asks for a drink choice, but does not plainly request the missing serving count.",PENDING USER CHECK

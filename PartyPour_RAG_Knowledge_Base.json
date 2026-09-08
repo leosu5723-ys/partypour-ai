@@ -1,0 +1,624 @@
+{
+  "knowledge_base_version": "2.0",
+  "generated": "2026-09-05",
+  "data_source_version": "v1.8 (PartyPour_AI_Recipe_Dataset_v1.8_Assumptions_Added.xlsx)",
+  "language": "en",
+  "retrieval_approach": "Exact-match / keyword retrieval on chunk_id, title, and retrieval_keywords, per the project's own Stage 4 design decision (small knowledge base -> exact/keyword matching is more reliable than full vector search).",
+  "chunk_count": 25,
+  "chunks": [
+    {
+      "chunk_id": "DRY_MARTINI_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Dry Martini (干马天尼)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001"
+      ],
+      "retrieval_keywords": [
+        "dry martini",
+        "干马天尼",
+        "gin",
+        "stir",
+        "nick & nora / cocktail glass",
+        "gin",
+        "dry vermouth"
+      ],
+      "content": "Recipe ID: DRY_MARTINI_001\nName: Dry Martini (干马天尼)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Gin\nAlcoholic: Yes\nGlassware: Nick & Nora / Cocktail glass | Serving style: straight up\nIngredients (per serving):\n  - Gin (金酒): 60 ml — Use chilled gin.\n  - Dry Vermouth (不甜苦艾酒): 10 ml — Project ratio is 60:10.\nGarnish: Olive or Lemon Twist (橄榄或柠檬皮), 1 piece (optional)\nMethod: Stir with ice, then strain into a chilled glass.\nIce preparation: Ice — 120 g per serving (preparation: Cooling and dilution for stir method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: Project-standard draft; source and ratio must be confirmed by the team.\nTeam decision: Confirm 60 ml Gin + 10 ml Dry Vermouth."
+    },
+    {
+      "chunk_id": "NEGRONI_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Negroni (尼格罗尼)",
+      "applies_to_recipe_ids": [
+        "NEGRONI_001"
+      ],
+      "retrieval_keywords": [
+        "negroni",
+        "尼格罗尼",
+        "gin",
+        "stir",
+        "old fashioned glass",
+        "gin",
+        "campari",
+        "sweet vermouth"
+      ],
+      "content": "Recipe ID: NEGRONI_001\nName: Negroni (尼格罗尼)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Gin\nAlcoholic: Yes\nGlassware: Old Fashioned glass | Serving style: on the rocks\nIngredients (per serving):\n  - Gin (金酒): 30 ml — Equal-parts draft.\n  - Campari (金巴利): 30 ml — Equal-parts draft.\n  - Sweet Vermouth (甜苦艾酒): 30 ml — Equal-parts draft.\nGarnish: Orange Peel (橙皮), 1 piece\nMethod: Build or stir with ice, then serve over fresh ice.\nIce preparation: Ice — 180 g per serving (preparation: Serve over fresh ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nRecipe-specific substitution rules: SUB_CAMPARI_001: CAMPARI -> APEROL — NOT ALLOWED (requires user confirmation). Do not silently replace Campari with Aperol because bitterness and sweetness change the canonical Negroni profile.\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: Project-standard draft based on the equal-parts convention; verify the selected reference.\nTeam decision: Confirm 30 ml each of Gin, Campari and Sweet Vermouth."
+    },
+    {
+      "chunk_id": "WHISKY_HIGHBALL_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Whisky Highball (威士忌嗨棒)",
+      "applies_to_recipe_ids": [
+        "WHISKY_HIGHBALL_001"
+      ],
+      "retrieval_keywords": [
+        "whisky highball",
+        "威士忌嗨棒",
+        "whisky",
+        "build",
+        "highball glass",
+        "whisky",
+        "soda water"
+      ],
+      "content": "Recipe ID: WHISKY_HIGHBALL_001\nName: Whisky Highball (威士忌嗨棒)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Whisky\nAlcoholic: Yes\nGlassware: Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - Whisky (威士忌): 45 ml — Use a whisky selected by the team.\n  - Soda Water (苏打水): 135 ml — Volume depends on glass and ice.\nGarnish: Lemon Peel (柠檬皮), 1 piece (optional)\nMethod: Build over ice and top with chilled soda water.\nIce preparation: Ice — 180 g per serving (preparation: Build over ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: The Chinese name 嗨棒 is interpreted as Whisky Highball per team confirmation.\nTeam decision: Confirm whisky type and soda-water volume."
+    },
+    {
+      "chunk_id": "GIN_TONIC_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Gin & Tonic (金汤力)",
+      "applies_to_recipe_ids": [
+        "GIN_TONIC_001"
+      ],
+      "retrieval_keywords": [
+        "gin & tonic",
+        "金汤力",
+        "gin",
+        "build",
+        "highball / copa glass",
+        "gin",
+        "tonic water"
+      ],
+      "content": "Recipe ID: GIN_TONIC_001\nName: Gin & Tonic (金汤力)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Gin\nAlcoholic: Yes\nGlassware: Highball / Copa glass | Serving style: on the rocks\nIngredients (per serving):\n  - Gin (金酒): 50 ml — Team-confirmed.\n  - Tonic Water (汤力水): 150 ml — Team-confirmed.\nGarnish: Lemon Slice or Lime Wedge (柠檬片或青柠角), 1 piece\nMethod: Build over ice, add tonic water slowly, and stir gently.\nIce preparation: Ice — 180 g per serving (preparation: Large amount of ice for highball.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: Team-confirmed fixed volume for MVP.\nTeam decision: Use 50 ml Gin + 150 ml Tonic Water."
+    },
+    {
+      "chunk_id": "DAIQUIRI_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Daiquiri (得其利)",
+      "applies_to_recipe_ids": [
+        "DAIQUIRI_001"
+      ],
+      "retrieval_keywords": [
+        "daiquiri",
+        "得其利",
+        "white rum",
+        "shake",
+        "coupe / cocktail glass",
+        "white rum",
+        "lime juice",
+        "simple syrup"
+      ],
+      "content": "Recipe ID: DAIQUIRI_001\nName: Daiquiri (得其利)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: White Rum\nAlcoholic: Yes\nGlassware: Coupe / Cocktail glass | Serving style: straight up\nIngredients (per serving):\n  - White Rum (白朗姆酒): 60 ml — Shake with ice.\n  - Lime Juice (青柠汁): 20 ml — Fresh or packaged; product mapping later.\n  - Simple Syrup (糖浆): 20 ml — Use one project-wide syrup definition.\nGarnish: Lime Wheel (青柠轮片), 1 piece (optional)\nMethod: Shake with ice and strain into a chilled glass.\nIce preparation: Ice — 120 g per serving (preparation: Shake method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; verify against the selected reference.\nTeam decision: Use 60 ml Rum + 20 ml Lime Juice + 20 ml Simple Syrup."
+    },
+    {
+      "chunk_id": "WHISKEY_SOUR_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Whiskey Sour (威士忌酸)",
+      "applies_to_recipe_ids": [
+        "WHISKEY_SOUR_001"
+      ],
+      "retrieval_keywords": [
+        "whiskey sour",
+        "威士忌酸",
+        "bourbon",
+        "shake",
+        "old fashioned glass",
+        "bourbon",
+        "lemon juice",
+        "simple syrup",
+        "egg white"
+      ],
+      "content": "Recipe ID: WHISKEY_SOUR_001\nName: Whiskey Sour (威士忌酸)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Bourbon\nAlcoholic: Yes\nGlassware: Old Fashioned glass | Serving style: on the rocks\nIngredients (per serving):\n  - Bourbon (波本威士忌): 60 ml — Use Bourbon as the MVP whiskey.\n  - Lemon Juice (柠檬汁): 30 ml — Fresh or packaged; product mapping later.\n  - Simple Syrup (糖浆): 20 ml — Project-wide syrup definition.\n  - Egg White (蛋清): 15 ml — Dry shake first; allergen and food-safety note required.\nGarnish: Lemon Peel or Cherry (柠檬皮或樱桃), 1 piece\nMethod: Dry shake with egg white, then shake with ice and strain over fresh ice.\nIce preparation: Ice — 120 g per serving (preparation: Shake and serve over fresh ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nRecipe-specific substitution rules: SUB_EGG_001: EGG_WHITE -> PASTEURISED_EGG_WHITE — ALLOWED (no confirmation needed). Pasteurised egg white keeps the intended texture while improving food-safety handling.\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Egg white is intentionally included per team decision; allergen and food-safety note required.\nTeam decision: Use 60 ml Bourbon + 30 ml Lemon Juice + 20 ml Simple Syrup + 15 ml Egg White.\nFood-safety note (SAFE_001): this recipe contains egg white — the system must show an allergen warning whenever this recipe appears in a recommendation."
+    },
+    {
+      "chunk_id": "MOSCOW_MULE_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Moscow Mule (莫斯科骡子)",
+      "applies_to_recipe_ids": [
+        "MOSCOW_MULE_001"
+      ],
+      "retrieval_keywords": [
+        "moscow mule",
+        "莫斯科骡子",
+        "vodka",
+        "build",
+        "mule mug / highball glass",
+        "vodka",
+        "ginger beer",
+        "lime juice"
+      ],
+      "content": "Recipe ID: MOSCOW_MULE_001\nName: Moscow Mule (莫斯科骡子)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Vodka\nAlcoholic: Yes\nGlassware: Mule mug / Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - Vodka (伏特加): 50 ml — Use neutral vodka.\n  - Ginger Beer (姜汁啤酒): 120 ml — Do not merge with Ginger Ale.\n  - Lime Juice (青柠汁): 15 ml — Fresh or packaged.\nGarnish: Lime Wedge (青柠角), 1 piece\nMethod: Build over ice, add ginger beer, and stir gently.\nIce preparation: Ice — 180 g per serving (preparation: Build over ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; keep Ginger Beer distinct from Ginger Ale.\nTeam decision: Confirm 50 ml Vodka + 120 ml Ginger Beer + 15 ml Lime Juice."
+    },
+    {
+      "chunk_id": "TOM_COLLINS_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Tom Collins (汤姆柯林斯)",
+      "applies_to_recipe_ids": [
+        "TOM_COLLINS_001"
+      ],
+      "retrieval_keywords": [
+        "tom collins",
+        "汤姆柯林斯",
+        "gin",
+        "shake_build",
+        "collins glass",
+        "gin",
+        "lemon juice",
+        "simple syrup",
+        "soda water"
+      ],
+      "content": "Recipe ID: TOM_COLLINS_001\nName: Tom Collins (汤姆柯林斯)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Gin\nAlcoholic: Yes\nGlassware: Collins glass | Serving style: on the rocks\nIngredients (per serving):\n  - Gin (金酒): 45 ml — Shake with citrus and syrup.\n  - Lemon Juice (柠檬汁): 30 ml — Fresh or packaged.\n  - Simple Syrup (糖浆): 15 ml — Project-wide syrup definition.\n  - Soda Water (苏打水): 90 ml — Volume depends on glass and ice.\nGarnish: Lemon Slice and Cherry (柠檬片和樱桃), 2 pieces\nMethod: Shake Gin, lemon juice and syrup with ice; strain over ice and top with soda.\nIce preparation: Ice — 180 g per serving (preparation: Serve over fresh ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; soda volume is an estimate tied to glass size.\nTeam decision: Use 45 ml Gin + 30 ml Lemon Juice + 15 ml Simple Syrup + 90 ml Soda Water."
+    },
+    {
+      "chunk_id": "CUBA_LIBRE_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Cuba Libre (自由古巴)",
+      "applies_to_recipe_ids": [
+        "CUBA_LIBRE_001"
+      ],
+      "retrieval_keywords": [
+        "cuba libre",
+        "自由古巴",
+        "dark rum",
+        "build",
+        "highball glass",
+        "dark rum",
+        "cola",
+        "lime juice"
+      ],
+      "content": "Recipe ID: CUBA_LIBRE_001\nName: Cuba Libre (自由古巴)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Dark Rum\nAlcoholic: Yes\nGlassware: Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - Dark Rum (黑朗姆酒): 50 ml — Use dark rum for project canonical version.\n  - Cola (可乐): 120 ml — Use cola, not soda water.\n  - Lime Juice (青柠汁): 10 ml — Canonical citrus is lime.\nGarnish: Lime Wedge (青柠角), 1 piece\nMethod: Build over ice, add lime juice and cola, then stir gently.\nIce preparation: Ice — 180 g per serving (preparation: Build over ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; use lime rather than lemon for the canonical version.\nTeam decision: Confirm 50 ml Dark Rum + 120 ml Cola + 10 ml Lime Juice."
+    },
+    {
+      "chunk_id": "MOJITO_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Mojito (莫吉托)",
+      "applies_to_recipe_ids": [
+        "MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "mojito",
+        "莫吉托",
+        "white rum",
+        "muddle_build",
+        "highball glass",
+        "white rum",
+        "lime juice",
+        "simple syrup",
+        "mint leaves",
+        "soda water"
+      ],
+      "content": "Recipe ID: MOJITO_001\nName: Mojito (莫吉托)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: White Rum\nAlcoholic: Yes\nGlassware: Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - White Rum (白朗姆酒): 45 ml — Use white rum for project canonical version.\n  - Lime Juice (青柠汁): 20 ml — Fresh or packaged.\n  - Simple Syrup (糖浆): 15 ml — Use syrup rather than loose sugar.\n  - Mint Leaves (薄荷叶): 6 leaves — Gently muddle; do not shred aggressively.\n  - Soda Water (苏打水): 75 ml — Top up after crushed ice.\nGarnish: Mint Sprig and Lime Wedge (薄荷枝和青柠角), 2 pieces\nMethod: Muddle lime, mint and syrup gently; add rum, crushed ice and soda.\nIce preparation: Crushed Ice — 220 g per serving (preparation: Muddle/build method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; use Simple Syrup for machine-readable consistency.\nTeam decision: Use 45 ml White Rum + 20 ml Lime Juice + 15 ml Simple Syrup + 75 ml Soda Water."
+    },
+    {
+      "chunk_id": "COSMOPOLITAN_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Cosmopolitan (大都会)",
+      "applies_to_recipe_ids": [
+        "COSMOPOLITAN_001"
+      ],
+      "retrieval_keywords": [
+        "cosmopolitan",
+        "大都会",
+        "vodka",
+        "shake",
+        "cocktail glass",
+        "citrus vodka",
+        "triple sec",
+        "cranberry juice",
+        "lime juice"
+      ],
+      "content": "Recipe ID: COSMOPOLITAN_001\nName: Cosmopolitan (大都会)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Vodka\nAlcoholic: Yes\nGlassware: Cocktail glass | Serving style: straight up\nIngredients (per serving):\n  - Citrus Vodka (柑橘伏特加): 40 ml — May map to neutral vodka as a product substitution only if approved.\n  - Triple Sec (橙味利口酒): 15 ml — Orange liqueur.\n  - Cranberry Juice (蔓越莓汁): 30 ml — Use cranberry juice, not cranberry syrup.\n  - Lime Juice (青柠汁): 15 ml — Fresh or packaged.\nGarnish: Orange Peel (橙皮), 1 piece\nMethod: Shake all liquid ingredients with ice and strain into a chilled glass.\nIce preparation: Ice — 120 g per serving (preparation: Shake method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; Citrus Vodka is a product-level choice that may map to Vodka.\nTeam decision: Confirm 40 ml Citrus Vodka + 15 ml Triple Sec + 30 ml Cranberry Juice + 15 ml Lime Juice."
+    },
+    {
+      "chunk_id": "GODFATHER_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Godfather (教父)",
+      "applies_to_recipe_ids": [
+        "GODFATHER_001"
+      ],
+      "retrieval_keywords": [
+        "godfather",
+        "教父",
+        "scotch whisky",
+        "stir",
+        "old fashioned glass",
+        "scotch whisky",
+        "amaretto"
+      ],
+      "content": "Recipe ID: GODFATHER_001\nName: Godfather (教父)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Scotch Whisky\nAlcoholic: Yes\nGlassware: Old Fashioned glass | Serving style: on the rocks\nIngredients (per serving):\n  - Scotch Whisky (苏格兰威士忌): 45 ml — Use Scotch as the canonical base.\n  - Amaretto (杏仁利口酒): 15 ml — Almond-flavoured liqueur.\nGarnish: Orange Peel (橙皮), 1 piece (optional)\nMethod: Stir Scotch and Amaretto with ice and serve over fresh ice.\nIce preparation: Ice — 180 g per serving (preparation: Stir and serve over fresh ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: Project-standard draft; verify the selected ratio.\nTeam decision: Use 45 ml Scotch + 15 ml Amaretto."
+    },
+    {
+      "chunk_id": "MARGARITA_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Margarita (玛格丽特)",
+      "applies_to_recipe_ids": [
+        "MARGARITA_001"
+      ],
+      "retrieval_keywords": [
+        "margarita",
+        "玛格丽特",
+        "tequila",
+        "shake",
+        "coupe / margarita glass",
+        "tequila",
+        "triple sec",
+        "lime juice",
+        "salt"
+      ],
+      "content": "Recipe ID: MARGARITA_001\nName: Margarita (玛格丽特)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Tequila\nAlcoholic: Yes\nGlassware: Coupe / Margarita glass | Serving style: straight up or on the rocks\nIngredients (per serving):\n  - Tequila (龙舌兰酒): 50 ml — Use Blanco Tequila for MVP unless team approves another style.\n  - Triple Sec (橙味利口酒): 20 ml — Orange liqueur.\n  - Lime Juice (青柠汁): 20 ml — Fresh or packaged.\n  - Salt (盐): 1 g (optional) — Only for optional salt rim.\nGarnish: Lime Wheel (青柠轮片), 1 piece\nMethod: Optional salt the rim; shake liquid ingredients with ice and strain.\nIce preparation: Ice — 120 g per serving (preparation: Shake method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Project-standard draft; salt rim is modeled as optional garnish material.\nTeam decision: Use 50 ml Tequila + 20 ml Triple Sec + 20 ml Lime Juice."
+    },
+    {
+      "chunk_id": "OLD_FASHIONED_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Old Fashioned (古典)",
+      "applies_to_recipe_ids": [
+        "OLD_FASHIONED_001"
+      ],
+      "retrieval_keywords": [
+        "old fashioned",
+        "古典",
+        "bourbon or rye whiskey",
+        "stir",
+        "old fashioned glass",
+        "bourbon or rye whiskey",
+        "simple syrup",
+        "angostura bitters"
+      ],
+      "content": "Recipe ID: OLD_FASHIONED_001\nName: Old Fashioned (古典)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: Bourbon or Rye Whiskey\nAlcoholic: Yes\nGlassware: Old Fashioned glass | Serving style: on the rocks\nIngredients (per serving):\n  - Bourbon or Rye Whiskey (波本或黑麦威士忌): 60 ml — Team should decide whether to allow both styles.\n  - Simple Syrup (糖浆): 7.5 ml — Project-wide syrup definition.\n  - Angostura Bitters (安格式苦精): 2 dashes — Dash is an estimated dispensing unit.\nGarnish: Orange Peel (橙皮), 1 piece\nMethod: Stir whiskey, syrup and bitters with ice; serve over a large cube.\nIce preparation: Ice — 180 g per serving (preparation: Serve over a large cube if available.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed.\nSource note: Project-standard draft; bitters are recorded in dashes and estimated for procurement.\nTeam decision: Use 60 ml Whiskey + 7.5 ml Simple Syrup + 2 dashes Bitters."
+    },
+    {
+      "chunk_id": "SINGAPORE_SLING_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Singapore Sling (新加坡司令)",
+      "applies_to_recipe_ids": [
+        "SINGAPORE_SLING_001"
+      ],
+      "retrieval_keywords": [
+        "singapore sling",
+        "新加坡司令",
+        "gin",
+        "shake",
+        "hurricane glass",
+        "gin",
+        "cherry sangue morlacco",
+        "cointreau",
+        "benedictine dom",
+        "fresh pineapple juice",
+        "fresh lime juice",
+        "grenadine syrup",
+        "angostura bitters"
+      ],
+      "content": "Recipe ID: SINGAPORE_SLING_001\nName: Singapore Sling (新加坡司令)\nVersion: 1.0\nStatus: canonical (source_status: verified)\nBase spirit: Gin\nAlcoholic: Yes\nGlassware: Hurricane glass | Serving style: on the rocks\nIngredients (per serving):\n  - Gin (金酒): 30 ml — IBA official ingredient.\n  - Cherry Sangue Morlacco (樱桃利口酒（Sangue Morlacco）): 15 ml — IBA official ingredient.\n  - Cointreau (君度橙酒): 7.5 ml — IBA official ingredient.\n  - Benedictine DOM (贝内迪克汀 DOM): 7.5 ml — IBA official ingredient.\n  - Fresh Pineapple Juice (新鲜菠萝汁): 120 ml — IBA official ingredient.\n  - Fresh Lime Juice (新鲜青柠汁): 15 ml — IBA official ingredient.\n  - Grenadine Syrup (石榴糖浆): 10 ml — IBA official ingredient.\n  - Angostura Bitters (安格式苦精): 1 dash — IBA official ingredient; dash is a dispensing unit.\nGarnish: Pineapple Wedge and Maraschino Cherry (菠萝片和马拉斯奇诺樱桃), 2 pieces\nMethod: Shake all ingredients with ice and strain into a Hurricane glass.\nIce preparation: Ice — 180 g per serving (preparation: Planning assumption for shaking and serving.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nRecipe-specific substitution rules: SUB_COIN_001: COINTREAU -> TRIPLE_SEC — ALLOWED (requires user confirmation). Budget substitution is possible, but the exact IBA Cointreau ingredient should be preferred. | SUB_CHERRY_001: CHERRY_SANGUE_MORLACCO -> CHERRY_LIQUEUR — ALLOWED (requires user confirmation). Bols Cherry Brandy is a practical substitute but is not identical to Cherry Sangue Morlacco.\nGeneral substitution rules that also apply: SUB_BRAND_001 (any recipe): a same-base-spirit-category brand/package swap is allowed at any budget tier, no confirmation needed. | SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: IBA official recipe selected by the team; no soda water is included.\nTeam decision: Use the IBA version: 30 Gin + 15 Cherry Sangue Morlacco + 7.5 Cointreau + 7.5 Benedictine + 120 Pineapple Juice + 15 Lime Juice + 10 Grenadine + 1 dash Angostura."
+    },
+    {
+      "chunk_id": "CINDERELLA_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Cinderella (灰姑娘（无酒精）)",
+      "applies_to_recipe_ids": [
+        "CINDERELLA_001"
+      ],
+      "retrieval_keywords": [
+        "cinderella",
+        "灰姑娘（无酒精）",
+        "non-alcoholic",
+        "shake_build",
+        "highball glass",
+        "lemon juice",
+        "orange juice",
+        "pineapple juice",
+        "grenadine",
+        "soda water"
+      ],
+      "content": "Recipe ID: CINDERELLA_001\nName: Cinderella (灰姑娘（无酒精）)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: None\nAlcoholic: No (mocktail)\nGlassware: Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - Lemon Juice (柠檬汁): 30 ml — Fresh or packaged.\n  - Orange Juice (橙汁): 30 ml — Fresh or packaged.\n  - Pineapple Juice (菠萝汁): 30 ml — Fresh or packaged.\n  - Grenadine (石榴糖浆): 10 ml — Non-alcoholic syrup.\n  - Soda Water (苏打水): 90 ml — May be replaced by lemon-lime soda only through an explicit rule.\nGarnish: Orange Slice or Cherry (橙片或樱桃), 1 piece\nMethod: Shake fruit juices and syrup with ice; strain over ice and top with soda or lemon-lime soda.\nIce preparation: Ice — 180 g per serving (preparation: Build over ice.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nRecipe-specific substitution rules: SUB_SODA_001: SODA_WATER -> LEMON_LIME_SODA — ALLOWED (requires user confirmation). Only allowed after user confirmation because sweetness changes the drink balance.\nGeneral substitution rules that also apply: SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Non-alcoholic option; verify the selected soda component and quantity.\nTeam decision: Use 30 ml Lemon Juice + 30 ml Orange Juice + 30 ml Pineapple Juice + 10 ml Grenadine + 90 ml Soda Water."
+    },
+    {
+      "chunk_id": "VIRGIN_MOJITO_001",
+      "doc_type": "canonical_recipe",
+      "title": "Canonical Recipe: Virgin Mojito (无酒精莫吉托)",
+      "applies_to_recipe_ids": [
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "virgin mojito",
+        "无酒精莫吉托",
+        "non-alcoholic",
+        "muddle_build",
+        "highball glass",
+        "lime juice",
+        "simple syrup",
+        "mint leaves",
+        "soda water"
+      ],
+      "content": "Recipe ID: VIRGIN_MOJITO_001\nName: Virgin Mojito (无酒精莫吉托)\nVersion: 1.0\nStatus: draft_canonical (source_status: candidate)\nBase spirit: None\nAlcoholic: No (mocktail)\nGlassware: Highball glass | Serving style: on the rocks\nIngredients (per serving):\n  - Lime Juice (青柠汁): 25 ml — Fresh or packaged.\n  - Simple Syrup (糖浆): 15 ml — Project-wide syrup definition.\n  - Mint Leaves (薄荷叶): 6 leaves — Gently muddle.\n  - Soda Water (苏打水): 120 ml — Top up after crushed ice.\nGarnish: Mint Sprig and Lime Wedge (薄荷枝和青柠角), 2 pieces\nMethod: Muddle lime, mint and syrup gently; add crushed ice and soda.\nIce preparation: Crushed Ice — 220 g per serving (preparation: Muddle/build method.; before the project's 10% ICE_WASTAGE_BUFFER_PCT wastage buffer)\nGeneral substitution rules that also apply: SUB_LIME_001 (any recipe): fresh Lime Juice -> bottled Lime Juice is allowed at any tier but REQUIRES user confirmation (disclosed convenience swap). | SUB_JUICE_001 (any recipe): fresh juice -> packaged juice is allowed at any tier but REQUIRES user confirmation (may change freshness/flavour).\nSource note: Non-alcoholic option designed to share ingredients with Mojito.\nTeam decision: Use 25 ml Lime Juice + 15 ml Simple Syrup + 6 mint leaves + 120 ml Soda Water."
+    },
+    {
+      "chunk_id": "REF-MENU-001",
+      "doc_type": "reference",
+      "title": "Supported Menu and Unsupported Drink Policy",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "supported menu",
+        "unsupported drink",
+        "unknown drink",
+        "espresso martini",
+        "margarita",
+        "unsupported_drinks",
+        "menu policy"
+      ],
+      "content": "Supported menu (17 canonical drinks, v1.8 data source):\nDry Martini (干马天尼, DRY_MARTINI_001) — alcoholic, status: draft_canonical\nNegroni (尼格罗尼, NEGRONI_001) — alcoholic, status: draft_canonical\nWhisky Highball (威士忌嗨棒, WHISKY_HIGHBALL_001) — alcoholic, status: draft_canonical\nGin & Tonic (金汤力, GIN_TONIC_001) — alcoholic, status: draft_canonical\nDaiquiri (得其利, DAIQUIRI_001) — alcoholic, status: draft_canonical\nWhiskey Sour (威士忌酸, WHISKEY_SOUR_001) — alcoholic, status: draft_canonical\nMoscow Mule (莫斯科骡子, MOSCOW_MULE_001) — alcoholic, status: draft_canonical\nTom Collins (汤姆柯林斯, TOM_COLLINS_001) — alcoholic, status: draft_canonical\nCuba Libre (自由古巴, CUBA_LIBRE_001) — alcoholic, status: draft_canonical\nMojito (莫吉托, MOJITO_001) — alcoholic, status: draft_canonical\nCosmopolitan (大都会, COSMOPOLITAN_001) — alcoholic, status: draft_canonical\nGodfather (教父, GODFATHER_001) — alcoholic, status: draft_canonical\nMargarita (玛格丽特, MARGARITA_001) — alcoholic, status: draft_canonical\nOld Fashioned (古典, OLD_FASHIONED_001) — alcoholic, status: draft_canonical\nSingapore Sling (新加坡司令, SINGAPORE_SLING_001) — alcoholic, status: canonical\nCinderella (灰姑娘（无酒精）, CINDERELLA_001) — non-alcoholic, status: draft_canonical\nVirgin Mojito (无酒精莫吉托, VIRGIN_MOJITO_001) — non-alcoholic, status: draft_canonical\n\nSystem rule: if a user requests a drink that is not on this list, the\nsystem must NOT invent or improvise a recipe from the model's general\nknowledge. The requested name must be placed in an `unsupported_drinks`\nfield, and the user should be prompted to choose from the supported menu\ninstead.\n\nReference example: Espresso Martini is used throughout the\nproject's test cases as the standard example of an \"unsupported drink\"\nrequest. NOTE (v1.8 change): Margarita is NOW a real, fully supported\ncanonical recipe in this data source (MARGARITA_001) — it used to be the\nproject's standard \"unsupported drink\" example in the earlier v1.2\ncatalog, but that changed when the team's recipe dataset was expanded\nfrom 10 to 17 drinks. Test case T03 was updated\naccordingly to use \"Espresso Martini\" instead, which is\ngenuinely not on this menu. Do not treat Margarita as unsupported."
+    },
+    {
+      "chunk_id": "REF-TIER-001",
+      "doc_type": "reference",
+      "title": "Budget Tier System Reference (rule-driven, v1.8)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "budget tier",
+        "economy",
+        "balanced",
+        "quality",
+        "budget",
+        "standard",
+        "premium",
+        "budget mode",
+        "tier selection",
+        "base spirit"
+      ],
+      "content": "TIER_001 (tier_selection): when requested_plan equals 'budget' -> select_base_tier = 'budget'. User-facing label: '经济型'. 只选择基酒的 budget SKU；其他材料继续使用 value_default。\n\nTIER_002 (tier_selection): when requested_plan equals 'standard' -> select_base_tier = 'standard'. User-facing label: '平衡型'. 只选择基酒的 standard SKU；作为未指定预算时的默认方案。\n\nTIER_003 (tier_selection): when requested_plan equals 'premium' -> select_base_tier = 'premium'. User-facing label: '高端型'. 只选择基酒的 premium SKU；其他材料不自动升级。\n\nTIER_004 (tier_selection): when requested_plan is_empty None -> select_base_tier = 'standard'. User-facing label: '平衡型'. 用户没有说明预算时，默认使用中等档位基酒。\n\nBASE_001 (ingredient_selection): when product_category equals 'base_spirit' -> allow_tier_options = 'true'. User-facing label: '基酒三档'. 只有基酒允许根据预算返回三个品牌选项。\n\nNONBASE_001 (ingredient_selection): when product_category in 'modifier|mixer|garnish_material|food_ingredient' -> select_default_sku = 'true'. User-facing label: '其他材料默认性价比'. 利口酒、软饮、果汁、糖浆、冰块和装饰材料不参与三档升级。\n\nSUB_001 (ingredient_selection): when mapping_type equals 'value_default' -> do_not_silently_replace_exact = 'true'. User-facing label: '禁止静默替换'. 如果配方要求指定品牌或指定材料，替代品必须显示为 substitution_candidate。\n\nSummary: the system supports three budget tiers — budget (经济型),\nstandard (平衡型, the default when the user does not state a budget tier),\nand premium (高端型). ONLY ingredients in the `base_spirit` product\ncategory (the recipe's main spirit) carry three separate tier options;\nevery other ingredient (modifier, mixer, garnish_material,\nfood_ingredient — liqueurs, juices, syrups, ice, garnishes) uses one\nfixed \"value_default\" product regardless of tier (rule NONBASE_001). A\nsubstitution must never silently replace an ingredient the recipe\nspecifies exactly (rule SUB_001) — it must be surfaced as a\nsubstitution_candidate for the user to accept."
+    },
+    {
+      "chunk_id": "REF-CALC-001",
+      "doc_type": "reference",
+      "title": "Procurement Calculation and Package-Size Rules (v1.8)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "packaging",
+        "rounding",
+        "purchase quantity",
+        "leftover",
+        "price range",
+        "calculation rule",
+        "package size",
+        "out of stock",
+        "fallback"
+      ],
+      "content": "QTY_001 (procurement_calculation): when required_volume_ml greater_than '0' -> packages_needed = 'ceil(required_volume_ml / package_size_ml)'. 所需总量除以包装容量后向上取整，不能购买半瓶。\n\nQTY_002 (procurement_calculation): when package_size_ml equals '0|empty' -> flag_data_issue = 'package_size_missing'. 没有包装容量时不输出购买数量，先标记数据问题。\n\nPRICE_001 (recommendation_quality): when unit_price_sgd is_empty None -> exclude_from_cost_total = 'true'. 价格缺失时可以展示品牌，但不能进入总价排序。\n\nSTOCK_001 (recommendation_quality): when availability_sg equals 'back_soon_observed|out_of_stock' -> fallback_same_tier = 'true'. 当前商品缺货时，优先选择同一基酒类别和同一价格档位的可售 SKU。\n\nThese rules govern the deterministic calculation module. The language\nmodel must never perform this arithmetic itself or state a number that\nwas not produced by this module.\n\n1. Total ingredient need = amount_value x planned_servings, summed across\n   every recipe in the order that shares the same ingredient_id (e.g. Gin\n   needed for Dry Martini, Negroni, and Gin & Tonic is combined into one\n   total before rounding).\n2. Purchase quantity = ceiling(total_amount_needed / package_size) — QTY_001.\n   A missing package size is a data problem to flag (QTY_002), never a\n   number to guess.\n3. Leftover = (purchase_quantity x package_size) - total_amount_needed.\n4. Package sizes for the small set of weight/count-based garnish and\n   mixer items (ice, egg white, simple syrup made from raw sugar, fresh\n   lemon/lime/orange used for peel/wedge/wheel/juice, olives, maraschino\n   cherries) are NOT stored as a separate spreadsheet column by team\n   decision (v1.8) — the raw package weight already lives in the SKU's\n   product_name text (e.g. \"650g\", \"2kg equivalent\") and is parsed by the\n   loader, then combined with the matching ratio in the Assumptions sheet\n   (see REF-ASSUMPTIONS-001) to get a usable procurement quantity.\n5. unit_price_sgd is a fixed snapshot (Singapore dollars, Lazada\n   Singapore / RedMart sourced, checked 2026-09-05), not a live price. An\n   ingredient with no price is excluded from the cost total but its\n   brand may still be shown (PRICE_001) — as of v1.8 every SKU has a\n   price, so this mainly matters if a future SKU is added without one.\n6. If a chosen SKU is out of stock or \"back soon\", fall back to another\n   available SKU in the same base-spirit category and the same price\n   tier (STOCK_001) rather than silently switching category or tier."
+    },
+    {
+      "chunk_id": "REF-ASSUMPTIONS-001",
+      "doc_type": "reference",
+      "title": "Ice Method, Citrus Yield and Package-Conversion Assumptions (v1.8)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "ice",
+        "crushed ice",
+        "lemon yield",
+        "lime yield",
+        "orange weight",
+        "egg white density",
+        "simple syrup yield",
+        "cherry count",
+        "olive count",
+        "garnish quantity",
+        "wastage buffer",
+        "planning assumption",
+        "singapore"
+      ],
+      "content": "These are team planning assumptions for the course MVP, not measured\nfacts, and should be described to the user as such.\n\nReference ice methods (illustrative — each recipe's actual ICE_CUBES /\nCRUSHED_ICE amount is baked directly into the Recipe Ingredients sheet\nand may differ slightly from these reference values when a recipe is\nserved \"on the rocks\" and needs extra ice in the glass, not just for\nmixing):\n  - Direct build or highball over ice (BUILD_OVER_ICE): 180 g/serving — Use for Gin & Tonic, Whisky Highball, Cuba Libre and similar drinks.\n  - Stir with ice and strain (STIR_AND_STRAIN): 120 g/serving — Use for Dry Martini, Negroni, Godfather and Old Fashioned chilling.\n  - Shake with ice and strain (SHAKE_AND_STRAIN): 150 g/serving — Use for Daiquiri, Margarita, Cosmopolitan and Singapore Sling.\n  - Muddle and serve with crushed ice (MUDDLE_CRUSHED): 220 g/serving — Use for Mojito and Virgin Mojito.\n\nFull Assumptions table (19 entries, includes 7 new\nSingapore-localized entries added when the data source moved to v1.8 —\nsee the file's own rationale column for full sourcing):\n  - PRICE_BUFFER_PCT = 0.1 ratio — Prices can change because of promotions, supplier and channel differences.\n  - ICE_WASTAGE_BUFFER_PCT = 0.1 ratio — Adds a practical buffer for melting, transfer and service loss.\n  - LEMON_YIELD_ML_PER_PC = 30 ml/pc — Converts recipe juice volume into whole-fruit purchasing quantity.\n  - LIME_YIELD_ML_PER_PC = 20 ml/pc — Converts recipe juice volume into whole-fruit purchasing quantity.\n  - PINEAPPLE_GARNISH_SLICES_PER_PC = 12 slices/pc — Estimates garnish pieces available from one pineapple.\n  - BITTERS_DASH_ML = 0.8 ml/dash — Makes dash-based recipes machine-readable for procurement.\n  - MINT_LEAVES_PER_BUNCH = 40 leaves/bunch — Converts leaf counts into bunches for procurement.\n  - BUILD_OVER_ICE_G_PER_SERVING = 180 g/serving — Ice used for direct-build and highball service.\n  - STIR_AND_STRAIN_G_PER_SERVING = 120 g/serving — Ice used for chilling and dilution before straining.\n  - SHAKE_AND_STRAIN_G_PER_SERVING = 150 g/serving — Ice used for shaking and chilling before straining.\n  - MUDDLE_CRUSHED_G_PER_SERVING = 220 g/serving — Higher quantity accounts for crushed-ice service.\n  - FRUIT_PURCHASE_ROUNDING = 1 whole unit — Fresh produce is purchased in whole units and rounded up.\n  - LEMON_AVG_WEIGHT_G = 120 g/pc — Converts lemon-weight packs (e.g. RedMart Unwaxed Lemons 650g) into a piece count for procurement math.\n  - LIME_AVG_WEIGHT_G = 75 g/pc — Converts lime-weight packs (250g) into a piece count for procurement math.\n  - ORANGE_AVG_WEIGHT_G = 180 g/pc — Converts orange-weight packs (RedMart Navel Orange 850g) into a piece count for procurement math.\n  - EGG_WHITE_DENSITY_G_PER_ML = 1.03 g/ml — Converts the 420g frozen pasteurised egg-white pack into ~408ml for recipes that use ml (e.g. Whiskey Sour).\n  - SUGAR_TO_SYRUP_YIELD_ML_PER_G = 1.65 ml finished syrup / g sugar — Converts the RedMan Syrup Sugar 700g pack into ~1155ml of finished simple syrup for procurement math.\n  - CHERRY_COUNT_PER_G = 0.1625 pieces/g — Converts the Domee Red Maraschino Cherry 727g jar into ~118 garnish pieces for procurement math.\n  - OLIVE_COUNT_PER_350G_JAR = 45 pieces/jar — Converts the Borges Whole Green Olives 350g jar into ~45 garnish pieces for procurement math.\n\nThe 7 newest entries (LEMON_AVG_WEIGHT_G, LIME_AVG_WEIGHT_G,\nORANGE_AVG_WEIGHT_G, EGG_WHITE_DENSITY_G_PER_ML,\nSUGAR_TO_SYRUP_YIELD_ML_PER_G, CHERRY_COUNT_PER_G,\nOLIVE_COUNT_PER_350G_JAR) exist specifically to convert the raw package\nweight printed in a SKU's product_name (e.g. \"RedMart Unwaxed Lemons\n650g\") into a usable procurement quantity, since the SKU Product Catalog\ndoes not carry a separate structured column for that. Two of them\n(CHERRY_COUNT_PER_G, OLIVE_COUNT_PER_350G_JAR) are lower-confidence\ncross-brand or mid-range retail estimates and are flagged as such —\nthis should be disclosed if a user asks how a garnish-purchase quantity\nwas derived."
+    },
+    {
+      "chunk_id": "REF-SUBS-001",
+      "doc_type": "reference",
+      "title": "Structured Substitution and Rejection Rules Reference (v1.8)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "substitution rule",
+        "allowed substitution",
+        "rejected substitution",
+        "aperol",
+        "campari",
+        "rule validator",
+        "wildcard recipe"
+      ],
+      "content": "Only the substitutions listed below are permitted. The rule-validator\nmodule treats this table as the single source of truth; free-text notes\nelsewhere are not a basis for approving a substitution. A recipe_id of\n'*' means the rule applies to every recipe that contains a matching\ningredient, not just one named drink.\n\nSUB_BRAND_001 — recipe: *, base_spirit -> same_base_spirit. ALLOWED (tiers: budget|standard|premium), no confirmation needed, canonical fidelity: high. Brand and package changes are allowed within the same base-spirit category when the selected tier is explicit.\n\nSUB_JUICE_001 — recipe: *, fresh_juice -> packaged_juice. ALLOWED (tiers: budget|standard|premium), requires user confirmation, canonical fidelity: medium. Packaged juice can reduce preparation effort but may change freshness and flavour.\n\nSUB_COIN_001 — recipe: SINGAPORE_SLING_001, COINTREAU -> TRIPLE_SEC. ALLOWED (tiers: budget), requires user confirmation, canonical fidelity: medium. Budget substitution is possible, but the exact IBA Cointreau ingredient should be preferred.\n\nSUB_CHERRY_001 — recipe: SINGAPORE_SLING_001, CHERRY_SANGUE_MORLACCO -> CHERRY_LIQUEUR. ALLOWED (tiers: budget|standard|premium), requires user confirmation, canonical fidelity: medium. Bols Cherry Brandy is a practical substitute but is not identical to Cherry Sangue Morlacco.\n\nSUB_CAMPARI_001 — recipe: NEGRONI_001, CAMPARI -> APEROL. NOT ALLOWED, requires user confirmation, canonical fidelity: low. Do not silently replace Campari with Aperol because bitterness and sweetness change the canonical Negroni profile.\n\nSUB_SODA_001 — recipe: CINDERELLA_001, SODA_WATER -> LEMON_LIME_SODA. ALLOWED (tiers: budget|standard|premium), requires user confirmation, canonical fidelity: medium. Only allowed after user confirmation because sweetness changes the drink balance.\n\nSUB_EGG_001 — recipe: WHISKEY_SOUR_001, EGG_WHITE -> PASTEURISED_EGG_WHITE. ALLOWED (tiers: budget|standard|premium), no confirmation needed, canonical fidelity: high. Pasteurised egg white keeps the intended texture while improving food-safety handling.\n\nSUB_LIME_001 — recipe: *, LIME_JUICE -> BOTTLED_LIME_JUICE. ALLOWED (tiers: budget|standard|premium), requires user confirmation, canonical fidelity: medium. Fresh lime is preferred; bottled juice is a convenience substitution and must be disclosed.\n\nThe most important rejection to remember: SUB_CAMPARI_001 explicitly\nrejects Negroni's Campari -> Aperol swap, even though Aperol is a common\n\"lighter Negroni\" substitution in general bartending knowledge. This is\nthe project's standing example of the system refusing a plausible-\nsounding but non-canonical request."
+    },
+    {
+      "chunk_id": "REF-SAFETY-001",
+      "doc_type": "reference",
+      "title": "Food-Safety and Allergen Warning Rule (v1.8, new)",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "allergen",
+        "egg white",
+        "food safety",
+        "whiskey sour",
+        "warning"
+      ],
+      "content": "SAFE_001 (service_safety rule): when a recommended recipe contains egg\nwhite as an ingredient (currently: Whiskey Sour, WHISKEY_SOUR_001), the\nsystem must display an allergen and food-safety warning alongside the\nrecommendation. This is a new rule introduced with the v1.8 data source\nschema (the Budget Tier Rules sheet's service_safety rule group) and did\nnot exist in the project's earlier v1.2 catalog, since no earlier\ncanonical recipe used egg white.\n\nRelated note: the project's Substitution Rules table also records\nSUB_EGG_001, which allows (and does not require confirmation for)\nsubstituting raw egg white with pasteurised egg white\n(SKU_EGG_WHITE_VALUE_001) — pasteurised egg white is in fact the only\negg-white SKU in the catalog, chosen specifically to keep the intended\ntexture while improving food-safety handling for guests."
+    },
+    {
+      "chunk_id": "REF-RESPONSIBLE-001",
+      "doc_type": "reference",
+      "title": "Responsible Drinking and Non-Alcoholic Guidance",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "responsible drinking",
+        "non-alcoholic",
+        "mocktail",
+        "moderation",
+        "out of scope",
+        "safety boundary",
+        "virgin mojito",
+        "cinderella"
+      ],
+      "content": "Standard responsible-serving reminder (general guidance, not medical\nadvice): serve alcohol in moderation, always keep water and at least one\nnon-alcoholic option available, and do not continue serving a guest who\nappears intoxicated.\n\nNon-alcoholic options (v1.8 has two, up from one in the earlier\ncatalog): Cinderella (CINDERELLA_001), Virgin Mojito (VIRGIN_MOJITO_001). Virgin Mojito is new in v1.8 and was\nspecifically designed to share most of its ingredients with the\nalcoholic Mojito (lime juice, simple syrup, mint, soda water), so\nordering both at once benefits from the same shared-ingredient\nconsolidation the project's calculation engine already does for\nalcoholic drinks.\n\nExplicit scope boundary: the system does not estimate an individual's\nalcohol tolerance, does not track personal drinking history, and does\nnot make personal health or safety judgments about any guest. Those\ntasks are explicitly out of scope for this project — the system's job\nstops at helping the organizer plan and purchase, not at deciding what\nany individual guest should drink."
+    },
+    {
+      "chunk_id": "REF-OUTPUT-001",
+      "doc_type": "reference",
+      "title": "Purchase List Output Format and Budget Mode Descriptions",
+      "applies_to_recipe_ids": [
+        "DRY_MARTINI_001",
+        "NEGRONI_001",
+        "WHISKY_HIGHBALL_001",
+        "GIN_TONIC_001",
+        "DAIQUIRI_001",
+        "WHISKEY_SOUR_001",
+        "MOSCOW_MULE_001",
+        "TOM_COLLINS_001",
+        "CUBA_LIBRE_001",
+        "MOJITO_001",
+        "COSMOPOLITAN_001",
+        "GODFATHER_001",
+        "MARGARITA_001",
+        "OLD_FASHIONED_001",
+        "SINGAPORE_SLING_001",
+        "CINDERELLA_001",
+        "VIRGIN_MOJITO_001"
+      ],
+      "retrieval_keywords": [
+        "purchase list",
+        "output format",
+        "shopping list",
+        "budget mode description",
+        "cost estimate",
+        "bilingual"
+      ],
+      "content": "Expected purchase list output, per party plan:\n  - Ingredient/product list: each line shows the product name, quantity\n    to buy (in purchase units, e.g. \"2 x 700 ml bottles\"), and the\n    resulting leftover amount.\n  - Estimated total cost: shown with the understanding that\n    unit_price_sgd is a fixed Lazada Singapore / RedMart snapshot, not a\n    live price, and may differ from real-time store prices.\n  - Garnish and ice: listed as their own line items, not folded into the\n    spirit/mixer totals, since they are commonly forgotten in manual\n    planning.\n  - A short plain-language purchase guide summarising what was combined\n    across drinks (e.g. \"Gin for these three drinks was combined into one\n    purchase total\") to make the shared-ingredient benefit visible to the\n    user.\n  - The web frontend presents every output bilingually (Chinese and\n    English side by side), per the project's Stage 5 prototype design.\n\nBudget mode descriptions (user-facing short text):\n  - budget / 经济型: lowest reasonable cost using each base spirit's\n    budget-tier SKU; every other ingredient stays at its one fixed\n    value_default product.\n  - standard / 平衡型 (default when the user does not state a tier): each\n    base spirit's mid-tier SKU, still with every other ingredient at its\n    fixed value_default product.\n  - premium / 高端型: each base spirit's premium-tier SKU; costs more and\n    may require reducing quantities if it exceeds the stated budget."
+    }
+  ]
+}
